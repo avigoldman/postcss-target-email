@@ -1,14 +1,20 @@
 {
   "name": "postcss-target-email",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Adds media queries to target email clients",
+  "keywords": [
+    "css",
+    "postcss",
+    "postcss-plugin",
+    "email",
+    "client",
+    "target"
+  ],
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Avi Goldman <me@avigoldman.com> (http://avigoldman.com)",
   "license": "MIT",
   "dependencies": {
-    "postcss": "^6.0.9"
+    "postcss": "^6.0.9",
+    "postcss-selector-parser": "^2.2.3"
   }
 }
