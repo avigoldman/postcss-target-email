@@ -9,6 +9,7 @@ module.exports = postcss.plugin('target-email', (opts = {}) => {
 
   opts.bodyClass = opts.bodyClass || 'body';
   opts.comment = opts.comment || false;
+
  
   function convertClientRules(css) {
     css.walkAtRules('client', (originalRule) => {
@@ -17,8 +18,9 @@ module.exports = postcss.plugin('target-email', (opts = {}) => {
       clients.forEach((client, i) => {
         const clientRule = createClientRule(originalRule, client);
 
-        if (opts.comment)
-          rule.before(postcss.comment({ text: `${client} ${clientConverters.hasOwnProperty(client) ? '' : ': unsupported'}` }));
+        if (opts.comment) {
+          originalRule.before(`/**\n * Targeting ${client}${clientConverters.hasOwnProperty(client) ? '' : ': UNSUPPORTED'}\n */`);
+        }
         
         // always add in the client rule, even if its not supported
         originalRule.before(clientRule);
