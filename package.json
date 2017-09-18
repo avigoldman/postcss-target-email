@@ -13,6 +13,7 @@
   "main": "index.js",
   "author": "Avi Goldman <me@avigoldman.com> (http://avigoldman.com)",
   "license": "MIT",
+  "repository": "https://github.com/avigoldman/postcss-target-email.git",
   "dependencies": {
     "postcss": "^6.0.9",
     "postcss-selector-parser": "^2.2.3"
