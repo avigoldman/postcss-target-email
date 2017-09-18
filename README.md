@@ -66,14 +66,14 @@ u + .body a {
 ### Supported Clients
 
 At the moment this package supports targeting the following clients.
-* aol
-* yahoo
-* gmail
-* outlook-com
-* thunderbird
-* samsung
-* lotusnotes8
-* webkit (not really a client, but quite helpful)
+* `aol`
+* `yahoo`
+* `gmail`
+* `outlook-com`
+* `thunderbird`
+* `samsung`
+* `lotusnotes8`
+* `webkit` (not really a client, but quite helpful)
 
 ### Sources
 
